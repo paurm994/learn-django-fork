@@ -41,6 +41,24 @@ Instalar Django:
     pip install django
 ```
 
+## Instalar NVM y Node 20
+
+Instalamos NVM (gestor de Node):
+```
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+Recargamos bash:
+```
+    source ~/.bashrc
+```
+Instalamos Node 20:
+```
+    nvm install 20 && nvm use 20
+```
+Miramos que la versión sea correcta:
+```
+    node -v # 20.14.0
+```
 ## PM2 
 
 1. Copiar el archivo `pm2.json` a vuestro proyecto
