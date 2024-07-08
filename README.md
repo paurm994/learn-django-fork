@@ -38,6 +38,12 @@ Django funciona con la estructura MVT:
   - Ejecutamos: `django-admin startproject my_tennis_club` -> debe aparecer una carpeta `my_tennis_club` (adecuado para varios proyectos)
     - Variante: `django-admin startproject my_tennis_club .` (<- punto final) adecuado cuando es el único proyecto // no hace la doble carpeta my_tennis_club
   - Renombro la carpeta de fuera como `proyecto`
+
+  **Ejecutamos el proyecto**
+  - Navegar en consola hasta donde tenéis `manage.py`
+  - `python manage.py runserver` -> http://127.0.0.1:8000/
+  
+  ![alt text](image-1.png)
 ## Django docs
 
 ## DRF
