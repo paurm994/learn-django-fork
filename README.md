@@ -24,7 +24,16 @@ Django funciona con la estructura MVT:
 
 1. Crear entorno virtual: `python -m venv .venv` # nombres habituales son `venv` o `.venv`
   - Para actualizar y que no salga warning con pip: `pip install --upgrade pip`
-  - Comprobamos versiones: `python --version` y `pip --version`
+    - Comprobamos versiones: `python --version` y `pip --version`
+  - Activar venv: `source .venv/bin/activate`, Windows: `.\<venv>\Scripts\activate`
+    - Comprobar ubicación del venv: `which python`
+  - Desactivar: `deactivate`
+2. Instalación de Django en venv:
+  - `pip list` -> debe mostrar pocas librerías
+  - Con el venv activado: `pip install Django`
+  - `pip list` -> debe aparecer `Django`
+    - info de Django: `pip show Django`
+  - Para ver la versión del gestor de Django: `django-admin --version`
 
 ## Django docs
 
