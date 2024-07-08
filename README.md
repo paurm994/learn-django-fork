@@ -34,7 +34,10 @@ Django funciona con la estructura MVT:
   - `pip list` -> debe aparecer `Django`
     - info de Django: `pip show Django`
   - Para ver la versión del gestor de Django: `django-admin --version`
-
+3. Creación de Proyecto
+  - Ejecutamos: `django-admin startproject my_tennis_club` -> debe aparecer una carpeta `my_tennis_club` (adecuado para varios proyectos)
+    - Variante: `django-admin startproject my_tennis_club .` (<- punto final) adecuado cuando es el único proyecto // no hace la doble carpeta my_tennis_club
+  - Renombro la carpeta de fuera como `proyecto`
 ## Django docs
 
 ## DRF
