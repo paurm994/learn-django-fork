@@ -23,7 +23,8 @@
   <hr>
   
   <p>
-    <a href="/">Volver a inicio</a>
+    {% comment %} usamos name de la ruta en urls.py para hacer el enlace {% endcomment %}
+    <a href="{% url 'index' %}">Volver a inicio</a>
   </p>
 </body>
 </html>
