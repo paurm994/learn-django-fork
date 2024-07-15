@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member #{{ member.id }}</title>
+</head>
+<body>
+  <h1>Member #{{ member.id }}</h1>
+
+  {% comment %} Estos comentarios no llegan al HTML final {% endcomment %}
+  {% comment %} Bucle for para presentar los datos de queryset Member: {% endcomment %}
+
+  <!-- Este comentario si llega al HTML -->
+  
+  <div style="border:1px solid black;">
+    <h3>Member: {{ member.id }}
+    <p>{{ member.firstname }}, {{ member.lastname }}</p>
+    <p>{{ member.phone }}
+  </div>
+  <hr>
+  
+  <p>
+    {% comment %} usamos name de la ruta en urls.py para hacer el enlace {% endcomment %}
+    <a href="{% url 'index' %}">Volver a inicio</a>
+  </p>
+</body>
+</html>
