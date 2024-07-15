@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index</title>
+  <title>Members</title>
 </head>
 <body>
   <h1>Members</h1>
@@ -15,7 +15,7 @@
   <ul>
   {% for member in members %}
     <li>
-      {{ member.id }} - {{ member.firstname }}, {{ member.lastname }}
+      <a href="{% url 'members-detail' id=member.id %}">{{ member.id }} - {{ member.firstname }}, {{ member.lastname }}</a>
     </li>
   {% endfor %}
   </ul>
