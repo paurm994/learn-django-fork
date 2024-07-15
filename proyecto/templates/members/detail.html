@@ -13,10 +13,13 @@
 
   <!-- Este comentario si llega al HTML -->
   
-  <div style="border:1px solid black;">
-    <h3>Member: {{ member.id }}
-    <p>{{ member.firstname }}, {{ member.lastname }}</p>
-    <p>{{ member.phone }}
+  <div style="border:1px solid black; padding:1rem; width: 50%; margin: 1rem auto;">
+    <h3 style="margin-top:0; text-align:center;">Member: {{ member.id }}</h3>
+    <p><strong>Nombre completo:</strong> {{ member.firstname }}, {{ member.lastname }}</p>
+    {% comment %} verifica si hay dato en phone, None cuenta como False {% endcomment %}
+    {% if member.phone %}
+      <p><strong>Teléfono:</strong> {{ member.phone }}</p>
+    {% endif %}
   </div>
   <hr>
   
