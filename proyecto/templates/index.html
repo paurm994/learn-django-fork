@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index</title>
-</head>
-<body>
+{% extends "master.html" %} {% comment %} Etiqueta para "usar" master.html {% endcomment %}
+
+{% comment %} Hace override al block title de master: {% endcomment %}
+{% block title %}
+  Inicio 123
+{% endblock %}
+
+
+{% block content %}
+  {% include 'css/styles.html' %}
   <h1>Index</h1>
   <p>
-  <a href="{% url 'members' %}">Ver members</a>
+    <a href="{% url 'members' %}">Ver members</a>
   </p>
-</body>
-</html>
+{% endblock %}

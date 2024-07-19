@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Members</title>
-</head>
-<body>
+{% extends "master.html" %} {% comment %} Etiqueta para "usar" master.html {% endcomment %}
+
+{% block title %}Members{% endblock %}
+
+
+{% block content %}
   <h1>Members</h1>
 
   {% comment %} Estos comentarios no llegan al HTML final {% endcomment %}
@@ -26,5 +24,4 @@
     {% comment %} usamos name de la ruta en urls.py para hacer el enlace {% endcomment %}
     <a href="{% url 'index' %}">Volver a inicio</a>
   </p>
-</body>
-</html>
+{% endblock %}

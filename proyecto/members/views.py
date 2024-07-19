@@ -13,7 +13,7 @@ def members(request):
     "members": list(lista_de_members)
   }
   # Devolvemos el HTML de templates/members/index.html:
-  return render(request, "members/index.html", context=context)
+  return render(request, "members/list.html", context=context)
 
 
 def members_detail(request, id):
