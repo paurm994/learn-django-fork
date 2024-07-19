@@ -12,7 +12,7 @@ def members(request):
   context = {
     "members": list(lista_de_members)
   }
-  # Devolvemos el HTML de templates/members/index.html:
+  # Devolvemos el HTML de templates/members/list.html:
   return render(request, "members/list.html", context=context)
 
 
