@@ -50,10 +50,10 @@ class CustomLogoutView(LogoutView):
 
 def logged_out_view(request):
     logout(request)
-    return redirect('logged_out')
+    return redirect('test')
         
-def logged_out_template(request):
-    return render(request, 'registration/logged_out.html')
+def sin_login(request):
+    return render(request, 'registration/sin_login.html')
 
 @login_required
 def protected_view(request):

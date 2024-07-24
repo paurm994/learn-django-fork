@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 
 # Configuración de la URL de redirección cuando hacemos login/logout
 LOGIN_REDIRECT_URL = "/protected/"
-LOGOUT_REDIRECT_URL = "logged_out"
+LOGOUT_REDIRECT_URL = "/test/"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
