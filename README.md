@@ -22,6 +22,9 @@ Django funciona con la estructura MVT:
 
 - Tutorial: https://www.w3schools.com/django/index.php
 
+
+## Pasos para crear un proyecto: 
+
 1. Crear entorno virtual: `python -m venv .venv` # nombres habituales son `venv` o `.venv`
   - Para actualizar y que no salga warning con pip: `pip install --upgrade pip`
     - Comprobamos versiones: `python --version` y `pip --version`
@@ -44,6 +47,11 @@ Django funciona con la estructura MVT:
   - `python manage.py runserver` -> http://127.0.0.1:8000/
   
   ![alt text](image-1.png)
+
 ## Django docs
 
+Hay 8 tutoriales para hacer en: https://docs.djangoproject.com/en/5.0/intro/tutorial01/
+
 ## DRF
+
+https://www.django-rest-framework.org/
